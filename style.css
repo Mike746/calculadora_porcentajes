@@ -1,0 +1,88 @@
+/* style.css*/
+
+/* Estilo Global */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*Contenido principal*/
+main{
+    margin: 20px;
+}
+
+/* Seccion con contenido */
+#contenido{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color: #333;
+    text-align: center;
+}
+
+/*Estilo de cuadro de texto*/
+input[type="text"]{
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+/*Contenedor donde se almacena resultado*/
+#resultado{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e1f5fe;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #007bff;
+    display: none;
+}
+
+/*Boton*/
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+/*Pie de pagina*/
+footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
