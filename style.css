@@ -60,6 +60,10 @@ input[type="text"]:focus{
     font-size: 18px;
     color: #007bff;
     display: none;
+
+    height: 200px;
+    overflow: auto;
+    max-height: 400px;
 }
 
 /*Boton*/
