@@ -1,7 +1,11 @@
 const miBoton = document.getElementById("Miboton"); // Se obtiene el boton mediante su ID
+const miBoton2 = document.getElementById("Miboton2");
 const salario_act = document.getElementById("Salario_Actual");
+const salario_act_2 = document.getElementById("Salario_Actual_2")
 const Salario_nue = document.getElementById("Salario_Nuevo");
+const porcentaje = document.getElementById("Porcentaje")
 const resultado = document.getElementById("resultado");
+const resultado_2 = document.getElementById("resultado");
 
 
 miBoton.addEventListener("click", function(){
@@ -23,6 +27,28 @@ miBoton.addEventListener("click", function(){
         Salario_nue.value="";
 
     }
+});
+
+miBoton2.addEventListener("click", function(){
+  const sal_act_2 = salario_act_2.value
+  const porcen = porcentaje.value
+  if (sal_act_2.trim() == "" || porcen.trim() == ""){
+    alert("Recuerda que para esta operacion requieres tener ambos datos")
+    salario_act_2.value="";
+    porcentaje.value = "";
+  } else {
+    const act_2 = parseFloat(sal_act_2);
+    const por = parseFloat(porcen);
+
+    let porcent = por/100
+    let res_2 = (porcent*act_2) + act_2
+    let res_redondeado_2 = res_2.toFixed(2);
+
+    resultado_2.innerHTML = "<strong> El nuevo salario del colaborador deberia ser: </strong>" + res_redondeado_2 + "<strong> MXN</strong>"
+    resultado_2.style.display = "block";
+    salario_act_2.value="";
+    porcentaje.value="";
+  }
 });
 
 
